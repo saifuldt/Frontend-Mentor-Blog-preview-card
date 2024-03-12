@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Blog preview card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Figtree;
+      font-weight: bold;
+    }
+
+    @media screen and (max-width:375px) {
+
+
+      body {
+        background-color: hsl(47, 88%, 63%);
+      }
+
+      main {
+        /* margin: 100px; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* background-color: hsl(47, 88%, 63%); */
+
+      }
+
+      .container { 
+        margin: 50px;
+        width: 320px;
+        padding: 20px;
+        background-color: hsl(0, 0%, 100%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        border-radius: 10px;
+        text-align: left;
+        box-shadow: 3px 3px 3px 3px black;
+      }
+
+      .container img {
+        width: 100%;
+        border-radius: 10px;
+      }
+
+      .container button {
+        align-self: self-start;
+        padding: 5px;
+        width: 100px;
+        border-color: transparent;
+        background-color: hsl(47, 88%, 63%);
+        border-radius: 5px;
+      }
+
+      .container h2 {
+        color: black;
+        width: 300px;
+      }
+
+      .container h2:hover {
+        color: hsl(47, 88%, 63%);
+        cursor: pointer;
+      }
+
+      .container h6 {
+        margin-bottom: 20px;
+        margin-top: 15px;
+        font-size: 16px;
+        color: hsl(0, 0%, 50%);
+      }
+
+      .container p {
+        margin-bottom: 20px;
+        margin-top: 20px;
+        color: hsl(0, 0%, 50%);
+        font-size: 16px;
+      }
+
+
+      .profile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .profile img {
+        width: 30px;
+      }
+
+      .profile h5 {
+        font-size: 16px;
+        font-weight: bold;
+      }
+
+
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+        text-decoration: none;
+      }
+
+
+    }
+
+
+    @media screen and (min-width:376px) {
+
+
+      main {
+        min-width: 376px;
+        margin: 100px;
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+        background-color: hsl(47, 88%, 63%);
+        /* margin: 5px; */
+
+      }
+
+      .container {
+        margin: 50px;
+        width: 320px;
+        padding: 20px;
+        background-color: hsl(0, 0%, 100%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        border-radius: 10px;
+        text-align: left;
+        box-shadow: 3px 3px 3px 3px black;
+      }
+
+      .container img {
+        width: 100%;
+        border-radius: 10px;
+      }
+
+      .container button {
+        align-self: self-start;
+        padding: 5px;
+        width: 100px;
+        border-color: transparent;
+        background-color: hsl(47, 88%, 63%);
+        border-radius: 5px;
+      }
+
+      .container h2 {
+        color: black;
+        width: 300px;
+        
+      }
+
+      .container h2:hover {
+        color: hsl(47, 88%, 63%);
+        cursor: pointer;
+      }
+
+      .container h6 {
+        margin-bottom: 20px;
+        margin-top: 15px;
+        font-size: 16px;
+        color: hsl(0, 0%, 50%);
+      }
+
+      .container p {
+        margin-bottom: 20px;
+        margin-top: 20px;
+        color: hsl(0, 0%, 50%);
+        font-size: 16px;
+      }
+
+
+      .profile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .profile img {
+        width: 30px;
+      }
+
+      .profile h5 {
+        font-size: 16px;
+        font-weight: bold;
+      }
+
+
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+        text-decoration: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <div class="container">
+      <img src="./assets/images/illustration-article.svg" alt="">
+      <br>
+      <button>Learning</button>
+      <h6>Published 21 Dec 2023</h6>
+      <h2> HTML & CSS foundations</h2>
+      <p>
+        These languages are the backbone of every website, defining structure, content, and presentation.
+      </p>
+      <div class="profile">
+        <img src="./assets/images/image-avatar.webp" alt="avater">
+        <h5>Greg Hooper</h5>
+      </div>
+    </div>
+  </main>
+  <!-- Learning
+
+  Published 21 Dec 2023
+
+  HTML & CSS foundations
+
+  These languages are the backbone of every website, defining structure, content, and presentation.
+
+  Greg Hooper
+   -->
+ <footer>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+ </footer>
+</body>
+
+</html>
